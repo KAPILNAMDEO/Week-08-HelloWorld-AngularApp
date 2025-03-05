@@ -11,10 +11,16 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent implements OnInit {
   title = 'HelloWorldApp'; 
   imgUrl = "assets/BridgeLabzLogo.jpg";
+  Url = "https://www.bridgelabz.com/";
  
 
   ngOnInit(): void {  
     this.title = "Hello from BridgeLabz."; 
+  }
+
+  onClick($event:MouseEvent){
+    console.log("Save buttrameter '$event' implicitly has an 'any' type.ts(7006)on is clicked!",$event)
+    window.open(this.Url,"_blank")
   }
 }
 
