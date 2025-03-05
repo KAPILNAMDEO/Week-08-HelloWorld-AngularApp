@@ -184,12 +184,23 @@
 
 <main class="main">
   <div>
-    <h1>{{ title }}</h1>
+    <!-- display dynamic greeting-->
+    <h1>Hello {{this.userName}} from BridgeLabz</h1>
+    <!-- Clickable Logo -->
     <img [src]="imgUrl" (click)="onClick($event)" 
-    alt="The BridgeLabz logo: a Bridge to employment through a Lab Works">
+      alt="The BridgeLabz logo: a Bridge to employment through a Lab Works">
+  </div>
+  
+  <div>
+    <!-- Input field for user to enter name -->
+    <input type="text" [(ngModel)]="userName" placeholder="Enter your name">
 
+    <br>
+
+    
   </div>
 </main>
+
 
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
